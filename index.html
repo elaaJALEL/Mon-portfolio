@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ala Jalel | Data Science & IA Passionnée</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Styles pour les messages du formulaire */
+        #formMessage {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 5px;
+            display: none;
+            font-weight: 500;
+        }
+        
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        /* Styles pour les icônes du footer */
+        .footer-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .footer-social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">Ala Jalel</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <div>
+                    <span class="hero-badge">
+                        <i class="fas fa-star"></i> Ingénieure Data Science & IA
+                    </span>
+                    <span class="hero-badge passion-badge">
+                        <i class="fas fa-fire"></i> Passionnée & Motivée
+                    </span>
+                </div>
+                <h1>Ala Jalel</h1>
+                <h2>Innovation & Intelligence Artificielle</h2>
+                <p>Étudiante passionnée et motivée en ingénierie Data Science & IA, je transforme les données en solutions intelligentes et créatives. À la recherche d'un stage PFE stimulant.</p>
+                
+                <div class="passion-text">
+                    <p>"Je suis passionnée par le potentiel infini de la Data Science et de l'IA pour résoudre des problèmes complexes et créer un impact positif. Ma motivation est alimentée par l'envie constante d'apprendre et d'innover."</p>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                    <a href="#apropos" class="btn btn-passion">Découvrir ma passion</a>
+                </div>
+            </div>
+           <div class="hero-image fade-in">
+    <div class="image-container">
+        <img src="assets/linkedin.jpg" alt="Ala Jalel" class="profile-photo">
+    </div>
+                <div class="floating-elements">
+                    <div class="floating-element">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="floating-element">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="floating-element">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="floating-element">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="section-title">
+            <h2>À propos de moi</h2>
+            <p>Passionnée par l'innovation technologique et la résolution de problèmes complexes</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <h3>Ingénieure en Data Science & IA</h3>
+                <p>Actuellement en cycle ingénieur à CESI Rouen, je me spécialise en Data Science et Intelligence Artificielle. Mon parcours académique et mes expériences pratiques m'ont permis de développer une expertise solide dans le domaine de l'analyse de données et du machine learning.</p>
+                
+                <div class="passion-highlight">
+                    <h4><i class="fas fa-heart"></i> Ma Passion pour la Data Science</h4>
+                    <p>Je suis profondément passionnée par la manière dont les données peuvent révéler des insights cachés et résoudre des problèmes complexes. Mon enthousiasme pour l'IA va au-delà de la technique - il s'agit de créer un impact positif grâce à l'innovation.</p>
+                </div>
+                
+                <p>Je suis à la recherche d'un stage de fin d'études pour mettre en pratique mes compétences et contribuer à des projets innovants dans le domaine de la data.</p>
+                
+                <div class="about-details">
+                    <div class="detail-item">
+                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <p>ala.jalel@viacesi.fr</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-phone"></i> Téléphone</h4>
+                        <p>+33 687 863 052</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-map-marker-alt"></i> Localisation</h4>
+                        <p>Rouen, France</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-briefcase"></i> Disponibilité</h4>
+                        <p>A partir du mois de Février</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image fade-in">
+                <div class="about-card">
+                    <div class="card-header">
+                        <div class="card-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="card-header-text">
+                            <h4>Ala Jalel</h4>
+                            <p>Data Scientist & IA Engineer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Langues</span>
+                        </div>
+                      
+                    </div>
+                    
+                    <h4 style="color: var(--accent-light); margin: 1.5rem 0 1rem;">Ce qui me motive</h4>
+                    
+                    <div class="motivation-item">
+                        <div class="motivation-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="motivation-text">
+                            <h5>Innovation & Créativité</h5>
+                            <p>J'adore repousser les limites et trouver des solutions novatrices</p>
+                        </div>
+                    </div>
+                    
+                    <div class="motivation-item">
+                        <div class="motivation-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="motivation-text">
+                            <h5>Impact & Résultats</h5>
+                            <p>Voir mes projets créer de la valeur est ma plus grande satisfaction</p>
+                        </div>
+                    </div>
+                    
+                    <div class="motivation-item">
+                        <div class="motivation-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="motivation-text">
+                            <h5>Collaboration & Partage</h5>
+                            <p>J'apprécie le travail d'équipe et l'échange de connaissances</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/elaa-jalel-6505b4353" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/elaaJALEL?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:ala.jalel@viacesi.fr"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <a href="#contact" class="btn">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="section-title">
+            <h2>Mon parcours</h2>
+            <p>Expériences professionnelles et formation académique</p>
+        </div>
+        <div class="timeline">
+            <!-- Expériences professionnelles -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Juil. – Sept. 2025</div>
+                    <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> Elastic Solutions, Tunisie</div>
+                    <h3>Projet de Fin d'Année</h3>
+                    <ul>
+                        <li>Développement d'un système intelligent d'analyse de logs</li>
+                        <li>Détection d'anomalies via modèles non supervisés</li>
+                        <li>Implémentation d'un tableau de bord interactif avec Flask</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Août – Sept. 2024</div>
+                    <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> Tunisie Télécom, Tunisie</div>
+                    <h3>Stage d'initiation</h3>
+                    <ul>
+                        <li>Configuration réseaux MSAN et supervision ADSL/VDSL</li>
+                        <li>Maintenance infrastructure fibre optique (FTTX)</li>
+                        <li>Découverte des services VoIP et cœur de réseau</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Formation -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025 – Présent</div>
+                    <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> CESI, Rouen, France</div>
+                    <h3>Cycle Ingénieur en Intelligence Artificielle</h3>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023 – 2025</div>
+                    <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> TEK-UP, Tunis, Tunisie</div>
+                    <h3>Cycle Ingénieur en Data Science & IA</h3>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023</div>
+                    <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> Centrale, Casablanca, Maroc</div>
+                    <h3>Admise au Concours Centrale Casablanca</h3>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 – 2023</div>
+                    <div class="timeline-location"><i class="fas fa-map-marker-alt"></i> IPEIN, Nabeul, Tunisie</div>
+                    <h3>Cycle préparatoire en Mathématiques-Physiques</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="skills">
+        <div class="section-title">
+            <h2>Mes compétences</h2>
+            <p>Technologies, outils et langages que j'utilise</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-code"></i> Langages de programmation</h3>
+                <ul class="skill-list">
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fas fa-calculator"></i> R</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
+                    <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-cogs"></i> Outils & Technologies</h3>
+                <ul class="skill-list">
+                    <li><i class="fab fa-docker"></i> Docker</li>
+                    <li><i class="fab fa-git-alt"></i> Git</li>
+                    <li><i class="fab fa-linux"></i> Linux</li>
+                    <li><i class="fas fa-server"></i> Ansible</li>
+                    <li><i class="fas fa-chart-bar"></i> Power BI</li>
+                    <li><i class="fas fa-database"></i> MongoDB</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-brain"></i> Data Science & IA</h3>
+                <ul class="skill-list">
+                    <li><i class="fas fa-chart-line"></i> Pandas, NumPy</li>
+                    <li><i class="fas fa-robot"></i> Scikit-learn</li>
+                    <li><i class="fas fa-network-wired"></i> TensorFlow</li>
+                    <li><i class="fas fa-project-diagram"></i> LSTM, ARIMA, GARCH</li>
+                    <li><i class="fas fa-language"></i> Transformers</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-globe"></i> Langues</h3>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check"></i> Arabe : Natif</li>
+                    <li><i class="fas fa-check"></i> Français : C1</li>
+                    <li><i class="fas fa-check"></i> Anglais : B2</li>
+                    <li><i class="fas fa-check"></i> Italien : B1</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects">
+        <div class="section-title">
+            <h2>Mes projets</h2>
+            <p>Réalisations académiques et personnelles en Data Science et IA</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Prévision financière IA</h3>
+                    <p>Modélisation de séries financières et génération automatique de rapports avec modèles LSTM, ARIMA et GARCH.</p>
+                    <div class="project-tags">
+                        <span class="tag">R</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">LSTM</span>
+                        <span class="tag">LLM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Détection Fake News</h3>
+                    <p>Détection de fake news et deepfakes à partir de texte et d'images avec modèles Transformers et Streamlit.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Prédiction médicale</h3>
+                    <p>Prédiction de l'arrêt cardiaque à partir de données patient avec modèles statistiques en R.</p>
+                    <div class="project-tags">
+                        <span class="tag">R</span>
+                        <span class="tag">Statistiques</span>
+                        <span class="tag">Médecine</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Business Intelligence</h3>
+                    <p>Tableaux de bord interactifs pour l'optimisation des campagnes marketing avec Power BI et MySQL.</p>
+                    <div class="project-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Projets Web Full-Stack</h3>
+                    <p>Développement de plateformes e-commerce, gestion immobilière et réservation de voitures.</p>
+                    <div class="project-tags">
+                        <span class="tag">Symfony</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-concierge-bell"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Gestion de Services</h3>
+                    <p>Application facilitant la mise en relation entre clients et prestataires de services.</p>
+                    <div class="project-tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter pour discuter de projets ou d'opportunités de stage</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>ala.jalel@viacesi.fr</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item fade-in">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-text">
+                        <h3>Téléphone</h3>
+                        <p>+33 687 863 052</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-text">
+                        <h3>Localisation</h3>
+                        <p>Rouen, France</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form fade-in">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Votre Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Envoyer le message</button>
+                    <div id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Ala Jalel</div>
+            <p>Ingénieure passionnée en Data Science & Intelligence Artificielle</p>
+            
+            <!-- Icônes de réseaux sociaux -->
+            <div class="footer-social-links">
+                <a href="https://linkedin.com/in/elaa-jalel-6505b4353" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/elaaJALEL" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:ala.jalel@viacesi.fr" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#experience">Expérience</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 Ala Jalel. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+     <script>
+        // Initialisation d'EmailJS avec votre Public Key
+        (function() {
+            // REMPLACEZ CETTE CLÉ PAR VOTRE PUBLIC KEY
+            emailjs.init("tcPMnE9do1LMfz0tz");
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messageDiv = document.getElementById('formMessage');
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            // Désactiver le bouton pendant l'envoi
+            submitButton.disabled = true;
+            submitButton.textContent = 'Envoi en cours...';
+            
+            // Récupérer les données du formulaire
+            const formData = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_email: "ala.jalel@viacesi.fr"
+            };
+            
+            console.log('Données envoyées:', formData);
+            
+            // Envoyer l'email via EmailJS
+            // REMPLACEZ LES IDS PAR LES VÔTRES
+            emailjs.send('service_f1atvvr', 'template_irminfw', formData)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    messageDiv.className = 'success-message';
+                    messageDiv.textContent = 'Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.';
+                    messageDiv.style.display = 'block';
+                    document.getElementById('contactForm').reset();
+                }, function(error) {
+                    console.error('FAILED...', error);
+                    messageDiv.className = 'error-message';
+                    messageDiv.textContent = 'Erreur lors de l\'envoi du message. Veuillez réessayer ou me contacter directement par email.';
+                    messageDiv.style.display = 'block';
+                })
+                .finally(() => {
+                    // Réactiver le bouton
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Envoyer le message';
+                    
+                    // Masquer le message après 5 secondes
+                    setTimeout(() => {
+                        messageDiv.style.display = 'none';
+                    }, 5000);
+                });
+        });
+    </script>
+</body>
+</html>
